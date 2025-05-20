@@ -2,7 +2,7 @@
 
 This project guides you through building a **dynamic Excel dashboard** that connects customer and order data using formulas, PivotTables, and VBA. The dashboard enables filtering, auto-calculation, and visual insights for better decision-making.
 
----
+
 
 # ✅ Step 1: Data Cleaning
 
@@ -17,7 +17,6 @@ Clean the **Customer** and **Order** sheets using Excel functions to standardize
 
 Use the following functions to auto-fill customer info based on selection:
 
-```excel
 - IF(VLOOKUP($B$3, customer_info, 11, FALSE)=0, "--", VLOOKUP($B$3, customer_info, 11, FALSE))
 - INDEX(customer_info[Address], MATCH($B$3, customer_info[Company Name], 0))
 
